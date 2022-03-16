@@ -13,6 +13,11 @@ export class RecipeListComponent implements OnInit {
       'This is simply a test',
       'https://cdn.pixabay.com/photo/2014/12/21/23/28/recipe-575434_1280.png'
     ),
+    new Recipe(
+      'A Test Recipe',
+      'This is simply a test',
+      'https://cdn.pixabay.com/photo/2014/12/21/23/28/recipe-575434_1280.png'
+    ),
   ];
 
   constructor() {}
