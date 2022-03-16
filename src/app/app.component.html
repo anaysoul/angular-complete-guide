@@ -15,11 +15,11 @@
       </button>
       <p *ngIf="display">Secret password = buna</p>
       <div
-        *ngFor="let displayItem of displayDetails"
+        *ngFor="let displayItem of displayDetails; let i = index"
         [ngStyle]="{
-          backgroundColor: displayDetails.length >= 5 ? 'blue' : 'transparent'
+          backgroundColor: i >= 4 ? 'blue' : 'transparent'
         }"
-        [ngClass]="{ 'white-text': displayDetails.length >= 5 }"
+        [ngClass]="{ 'white-text': i >= 4 }"
       >
         {{ displayItem.valueOf() | date: "medium" }}
       </div>

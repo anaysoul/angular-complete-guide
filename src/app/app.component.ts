@@ -20,7 +20,7 @@ export class AppComponent {
 
   onDisplayDetails() {
     this.display = !this.display;
-    this.displayDetails.push(Date.now());
+    this.displayDetails.push(new Date().getTime());
     console.log(this.displayDetails);
   }
 }
